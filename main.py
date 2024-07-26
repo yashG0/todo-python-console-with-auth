@@ -106,7 +106,7 @@ def main():
             result = signIn(username, password)
             print(f"{Fore.GREEN}{result}{Style.RESET_ALL}")
 
-            if result:
+            if "successfully" in result:
                 sign_in_menu(username)
 
         elif user_choice == 3:
